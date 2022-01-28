@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #C14F4F;
+  outline: none;
+  color: inherit;
+  background-color: inherit;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+
+  width: fit-content;
+  
+  margin: 300px auto;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__list {
+  z-index: 667;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  overflow-y: auto;
+
+  max-height: 17vh;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-radius: 4px;
+  color: rgba(250, 250, 250);
+  background-color: rgb(55, 55, 55);
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+
+  transition: opacity 150ms ease-out;
+}
+
+.menu--right-aligned, .menu--dropend, .menu--dropstart {
+  width: fit-content;
+}
+
+.menu--right-aligned > .menu__list {
+  right: 0;
+}
+
+.menu--dropstart > .menu__list {
+  top: 0;
+  right: 100%;
+}
+
+.menu--dropend > .menu__list {
+  top: 0;
+  left: 100%;
+}
+
+.menu--dropup > .menu__list {
+  bottom: 100%;
+}
+
+.menu__list--show {
+  visibility: visible;
+  opacity: .9;
+}
+
+.menu__list-panel {
+  cursor: pointer;
+  padding: 0.5em 0;
+
+  transition: background-color 150ms ease-out;
+}
+
+.menu__list-panel:hover {
+  background-color: grey;
+}
+
+.menu__list-panel--disabled {
+  cursor: initial;
+
+  color: #666666;
+}
+
+.menu__list-panel--disabled:hover {
+  background-color: initial;
+}
+
+.menu__list-option {
+  padding: 0 .8em;
+}

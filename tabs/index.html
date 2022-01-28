@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Tabs panel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div role="tablist" class="tabs">
+        <button role="tab" aria-selected="true" aria-controls="tab-panel1" class="tab tab--is-selected">Tab 1</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-panel2" class="tab">Tab 2</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-panel3" class="tab">Tab 3</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-panel4" class="tab">Tab 4</button>
+      </div>
+      <div id="tab-panel1" role="tabpanel" class="tab-panel">
+        Panel 1
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+      <div hidden id="tab-panel2" role="tabpanel" class="tab-panel">
+        Panel 2
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+      <div hidden id="tab-panel3" role="tabpanel" class="tab-panel">
+        Panel 3
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+      <div hidden id="tab-panel4" role="tabpanel" class="tab-panel">
+        Panel 4
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

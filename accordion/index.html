@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js" defer></script>
+    <title>accordion workshop</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="accordion">
+        <button class="accordion__header" aria-expanded="false" aria-disabled="false" aria-controls="panel1">
+          <div>Accordion 1</div>
+          <svg class="accordion__arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+        </button>
+        <div id="panel1" class="accordion__panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion__header" aria-expanded="false" aria-disabled="false" aria-controls="panel2">
+          <div>Accordion 2</div>
+          <svg class="accordion__arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+        </button>
+        <div id="panel2" class="accordion__panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</div>
+      </div>
+
+      <div class="accordion accordion--disabled">
+        <button class="accordion__header" aria-expanded="false" aria-disabled="true" aria-controls="panel3-" disabled tabindex="-1">
+          <div>Accordion 3</div>
+          <svg class="accordion__arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+        </button>
+        <div id="panel3" class="accordion__panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion__header" aria-expanded="false" aria-disabled="false" aria-controls="panel4">
+          <div>Accordion 4</div>
+          <svg class="accordion__arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+        </button>
+        <div id="panel4" class="accordion__panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion__header" aria-expanded="false" aria-disabled="false" aria-controls="panel5">
+          <div>Accordion 5</div>
+          <svg class="accordion__arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+          </svg>
+        </button>
+        <div id="panel5" class="accordion__panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,2 +1,2 @@
 # native-components
-🌈 Some native js/html/css UI components implementations
+🌈 Some native js/html/css UI components implementation

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Dialog</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+      </p>
+
+      <button onclick="openDialog('dialog1')">
+        OPEN DIALOG
+      </button>
+      <button onclick="openDialog('dialog2')">
+        OPEN DIALOG
+      </button>
+    </div>
+
+  <div class="scrim" id="dialog1">
+      <div role="dialog" aria-modal="true">
+        <div class="dialog__content">
+          <button onclick="closeDialog('dialog1')">CLOSE DIALOG 1</button>
+        </div>
+      </div>
+
+    <div class="scrim" id="dialog2">
+      <div role="dialog" aria-modal="true">
+        <div class="dialog__content">
+          <button onclick="closeDialog('dialog2')">CLOSE DIALOG 2</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

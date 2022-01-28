@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="../../.fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Carousel</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="carousel" role="listitem" aria-roledescription="Carousel" id="carousel">
+        <div class="carousel__contents">
+          <button class="carousel__arrow" aria-controls="carousel" aria-label="Previous slide">
+            <div class="fa fa-chevron-left"></div>
+          </button>
+          <div class="carousel__list" aria-live="polite">
+            <div class="carousel__item carousel__item--1" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--2" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--3" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--4" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+          </div>
+          <button class="carousel__arrow" aria-controls="carousel" aria-label="Next slide">
+            <div class="fa fa-chevron-right"></div>
+          </button>
+        </div>
+        <div class="carousel__indicators" aria-controls="carousel" aria-label="carousel buttons">
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
+
+       <div class="carousel" role="listitem" aria-roledescription="Carousel" id="carousel" data-infinite="true" data-interval="4000">
+        <div class="carousel__contents">
+          <button class="carousel__arrow" aria-controls="carousel" aria-label="Previous slide">
+            <div class="fa fa-chevron-left"></div>
+          </button>
+          <div class="carousel__list" aria-live="polite">
+            <div class="carousel__item carousel__item--1" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--2" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--3" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+            <div class="carousel__item carousel__item--4" role="listbox" aria-roledescription="slide" aria-hidden="true"></div>
+          </div>
+          <button class="carousel__arrow" aria-controls="carousel" aria-label="Next slide">
+            <div class="fa fa-chevron-right"></div>
+          </button>
+        </div>
+        <div class="carousel__indicators" aria-controls="carousel" aria-label="carousel buttons">
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

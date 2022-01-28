@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: rgb(42, 42, 42);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+.container {
+  width: 500px;
+}
+
+.accordion {
+  min-width: fit-content;
+
+  color: #fff;
+  background-color: #444;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+  transition-property: margin-top, margin-bottom;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.accordion + .accordion {
+  border-top: 1px solid rgb(90, 90, 90);
+}
+
+.accordion--expanded {
+  margin: 16px 0;
+
+  border-radius: 4px;
+  border-top: none !important;
+}
+
+.accordion--expanded + .accordion {
+  border-top: none;
+}
+
+.accordion--expanded:first-child {
+  margin-top: 0;
+}
+
+.accordion--expanded:last-child {
+  margin-bottom: 0;
+}
+
+.accordion:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.accordion:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.accordion--disabled {
+  opacity: .6;
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 48px;
+
+  padding: 0 16px;
+
+  border-radius: inherit;
+
+  transition: min-height 150ms ease-out;
+}
+
+.accordion__header:focus-visible {
+  filter: brightness(120%);
+}
+
+.accordion--disabled .accordion__header {
+  cursor: inherit;
+}
+
+.accordion__header--expanded {
+  min-height: 64px;
+}
+
+.accordion__arrow-icon {
+  height: 1em;
+  width: 1em;
+
+  font-size: 1.5rem;
+  fill: currentColor;
+
+  transition: transform 300ms ease-out;
+}
+
+.accordion__arrow-icon--rotate {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  overflow-y: hidden;
+
+  height: 0;
+
+  padding: 0 16px;
+
+  transition: height 300ms ease-out;
+}
